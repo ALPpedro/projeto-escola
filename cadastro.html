@@ -65,12 +65,12 @@
           <button
             class="btn-login bg-dark"
             onclick="window.location.href = 'login.html'"
-            style="border-bottom: solid 1px aqua"
           >
             <i class="bi bi-box-arrow-in-right"></i> Entrar
           </button>
           <button
             class="btn-cadastre bg-dark"
+            style="border-bottom: solid 1px aqua"
             onclick="window.location.href = 'cadastro.html'"
           >
             <i class="bi bi-person-plus-fill"></i>Cadastre-se
@@ -85,7 +85,11 @@
       style="margin-top: 10rem"
     >
       <form class="col-4">
-        <h1>Entre com sua conta</h1>
+        <h1>Cadastre-se</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nome</label>
+          <input type="text" class="form-control" placeholder="Pedro Pauli" />
+        </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input
@@ -124,11 +128,12 @@
             class="btn btn-primary"
             style="margin-right: 7rem"
           >
-            Entrar
+            Cadastrar
           </button>
         </div>
       </form>
     </div>
+
     <footer class="bg-dark fixed-bottom" style="margin-top: 2rem">
       <div class="bg-dark d-flex justify-content-center">
         <div style="text-align: center; color: white; text-decoration: none">
