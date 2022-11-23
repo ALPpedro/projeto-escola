@@ -1,3 +1,6 @@
 .active{
     border-bottom: solid 1px aqua;
 }
+.nav-item, .btn-login, .btn-cadastre{ 
+    font-size: 25px
+}

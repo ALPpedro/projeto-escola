@@ -24,17 +24,17 @@
     <!-- CSS Próprio -->
     <link rel="stylesheet" href="css/inicio.css" />
   </head>
-  <body>
+  <body style="background-color: rgb(216, 213, 213)">
     <nav
       class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark"
       id="navbar"
     >
       <div class="container py-2">
-        <a href="" class="navbar-brand">
+        <a href="" class="navbar-brand" style="font-size: 25px">
           <img
             src="img/logo.png"
             alt="logo"
-            style="width: 50px; height: 50px"
+            style="width: 55px; height: 55px"
           />
           <span>E-Study</span>
         </a>
@@ -51,24 +51,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-items">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item" style="font-size: 25px">
               <a href="cursos.html" class="nav-link" aria-current="page"
                 >Cursos</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item" style="font-size: 25px">
               <a href="quem-somos.html" class="nav-link" aria-current="page"
                 >Quem Somos</a
               >
             </li>
           </ul>
           <button
+            style="font-size: 25px"
             class="btn-login bg-dark"
             onclick="window.location.href = 'login.html'"
           >
             <i class="bi bi-box-arrow-in-right"></i> Entrar
           </button>
           <button
+            style="font-size: 25px; margin-left: 5px"
+            hover="color: blue"
             class="btn-cadastre bg-dark"
             onclick="window.location.href = 'cadastro.html'"
           >
@@ -77,122 +80,184 @@
         </div>
       </div>
     </nav>
-
-    <div class="container" style="margin-top: 6rem" id="slider-container">
+    <div
+      class="container"
+      style="
+        display: flex;
+        margin-top: 8rem;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 4%;
+        padding-right: 4%;
+      "
+    >
+      <h3>Pagina Incial</h3>
+      <div></div>
+    </div>
+    <div
+      style="
+        margin-top: 1rem;
+        display: flex;
+        background-color: rgb(216, 213, 213);
+      "
+    >
       <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
+        style="background-color: rgb(216, 213, 213); width: 21%; height: 400px"
+      ></div>
+      <div
+        class="container"
+        style="background-color: rgb(216, 213, 213); width: 68%"
+        id="slider-container"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="max-height: 500px">
-            <img src="img/img-home.jpg" class="d-block w-100 h-100" alt="..." />
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 500px">
+              <img
+                src="img/img-home.jpg"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" style="max-height: 500px">
+              <img src="img/programacao.jpg" class="d-block w-100" alt="..." />
+            </div>
           </div>
-          <div class="carousel-item" style="max-height: 500px">
-            <img src="img/programacao.jpg" class="d-block w-100" alt="..." />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="container d-flex">
-        <a href=""><img src="img/sql.png" alt="" srcset="" /></a>
-        <a href="" style="margin-top: 4rem; text-decoration: none; color: black"
-          ><h3>Banco de Dados Do Básico ao Avançado</h3>
-          <h5>Com o nosso curso você vai aprender:</h5>
-          <p>
-            *Instalar e utilizar diferentes Sistemas Gerenciadores de Banco de
-            Dados;
-          </p>
-          <p>*Bancos de dados relacionais e não relacionais;</p>
-          <p>
-            *Modelar bancos de dados relacionais aplicando as formas normais;
-          </p>
-          <p>*Diferenciar e utilizar bancos de dados SQL com NoSQL.</p>
-          <p>
-            Faça o nosso curso de Banco de Dados e ganhe um diferencial na sua
-            carreira!
-          </p></a
-        >
-        <div></div>
-      </div>
+        <div class="container d-flex">
+          <a href=""><img src="img/sql.png" alt="" srcset="" /></a>
+          <a
+            href=""
+            style="margin-top: 4rem; text-decoration: none; color: black"
+            ><h3>Banco de Dados Do Básico ao Avançado</h3>
+            <h5>Com o nosso curso você vai aprender:</h5>
+            <p>
+              *Instalar e utilizar diferentes Sistemas Gerenciadores de Banco de
+              Dados;
+            </p>
+            <p>*Bancos de dados relacionais e não relacionais;</p>
+            <p>
+              *Modelar bancos de dados relacionais aplicando as formas normais;
+            </p>
+            <p>*Diferenciar e utilizar bancos de dados SQL com NoSQL.</p>
+            <p>
+              Faça o nosso curso de Banco de Dados e ganhe um diferencial na sua
+              carreira!
+            </p></a
+          >
+          <div></div>
+        </div>
 
-      <div class="container d-flex">
-        <a href="" style="text-decoration: none; color: black"
-          ><h3>Microsoft Word Do Básico ao Avançado:</h3>
-          <h5>Com o nosso curso você vai aprender:</h5>
-          <p>*O que você precisa saber de Microsoft Word;</p>
-          <p>
-            *Produtividade e eficiência. Aprenda a usar todo o potencial do Word
-            de forma simples e intuitiva;
-          </p>
-          <p>
-            *Criar Relatórios, Contratos, TCC, Monografia, Formulários,
-            Certificados;
-          </p>
-          <p>
-            *Construa índices, sumários, listas de tabelas e figuras,
-            formulários, rodapés;
-          </p>
-          <p>*Configurar e editar QUALQUER tipo de documento;</p>
-          <p>
-            Aprenda Microsoft Word para usar no que quiser, em seus desafios e
-            ganhe um diferencial na sua carreira!
-          </p>
-        </a>
-        <a href=""
-          ><img
-            src="img/word2.png"
-            width="650px"
-            height="370px"
-            alt=""
-            srcset=""
-        /></a>
-        <div></div>
+        <div class="container d-flex">
+          <a href="" style="text-decoration: none; color: black"
+            ><h3>Microsoft Word Do Básico ao Avançado:</h3>
+            <h5>Com o nosso curso você vai aprender:</h5>
+            <p>*O que você precisa saber de Microsoft Word;</p>
+            <p>
+              *Produtividade e eficiência. Aprenda a usar todo o potencial do
+              Word de forma simples e intuitiva;
+            </p>
+            <p>
+              *Criar Relatórios, Contratos, TCC, Monografia, Formulários,
+              Certificados;
+            </p>
+            <p>
+              *Construa índices, sumários, listas de tabelas e figuras,
+              formulários, rodapés;
+            </p>
+            <p>*Configurar e editar QUALQUER tipo de documento;</p>
+            <p>
+              Aprenda Microsoft Word para usar no que quiser, em seus desafios e
+              ganhe um diferencial na sua carreira!
+            </p>
+          </a>
+          <a href=""
+            ><img
+              src="img/Microsoft_Word.png"
+              width="650px"
+              height="370px"
+              alt=""
+              srcset=""
+          /></a>
+          <div></div>
+        </div>
+        <div class="container d-flex" style="margin-top: 4%">
+          <a href=""
+            ><img
+              src="img/CSharp.png"
+              width="650px"
+              height="370px"
+              alt=""
+              srcset=""
+          /></a>
+          <a
+            href=""
+            style="margin-left: 8%; text-decoration: none; color: black"
+            ><h3>C# Programação Orientada a Objetos:</h3>
+            <h5>Com o nosso curso você vai aprender:</h5>
+            <p>*Linguagem C#;</p>
+            <p>*Programação Orientada a Objetos;</p>
+            <p>*Criar soluções flexíveis, extensíveis e testáveis;</p>
+            <p>*Base teórica e prática para ser um desenvolvedor C#;</p>
+            <p>*Solucionando problemas reais.</p>
+            <p>
+              Nosso curso é o mais didático e completo de C#, ao adquiri-lo você
+              irá ganhar um diferencial na sua carreira!
+            </p>
+          </a>
+          <div></div>
+        </div>
       </div>
-      <div class="container d-flex" style="margin-top: 4%">
-        <a href=""
-          ><img
-            src="img/csharp.jpg"
-            width="650px"
-            height="370px"
-            alt=""
-            srcset=""
-        /></a>
-        <a href="" style="margin-left: 8%; text-decoration: none; color: black"
-          ><h3>C# Programação Orientada a Objetos:</h3>
-          <h5>Com o nosso curso você vai aprender:</h5>
-          <p>*Linguagem C#;</p>
-          <p>*Programação Orientada a Objetos;</p>
-          <p>*Criar soluções flexíveis, extensíveis e testáveis;</p>
-          <p>*Base teórica e prática para ser um desenvolvedor C#;</p>
-          <p>*Solucionando problemas reais.</p>
-          <p>
-            Nosso curso é o mais didático e completo de C#, ao adquiri-lo você
-            irá ganhar um diferencial na sua carreira!
-          </p>
-        </a>
-        <div></div>
-      </div>
+      <div
+        style="
+          background-color: rgb(216, 213, 213);
+          width: 21%;
+          height: 500px;
+          z-index: 9;
+        "
+      ></div>
+      <button
+        id="back-to-top"
+        style="
+          background-color: rgb(216, 213, 213);
+          position: fixed;
+          border: 0px;
+          z-index: 8;
+          font-size: 50px;
+          font-weight: 700;
+          margin-left: 90%;
+          margin-top: 2rem;
+        "
+      >
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </button>
     </div>
 
-    <footer class="bg-dark bottom" style="margin-top: 2rem">
+    <footer
+      class="bg-dark bottom"
+      style="margin-top: 2rem; padding-top: 2rem; padding-bottom: 1rem"
+    >
       <div class="bg-dark d-flex justify-content-center">
         <div style="text-align: center; color: white; text-decoration: none">
           <h1>E-Study</h1>
@@ -218,4 +283,10 @@
       </div>
     </footer>
   </body>
+  <script>
+    var btn = document.querySelector("#back-to-top");
+    btn.addEventListener("click", function () {
+      window.scrollTo(0, 0);
+    });
+  </script>
 </html>

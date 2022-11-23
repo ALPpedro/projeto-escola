@@ -9,3 +9,13 @@
     border: none;
     color: white;
 }
+.card{
+    background-color: rgb(201, 199, 199);
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.nav-item, .btn-login, .btn-cadastre{ 
+    font-size: 25px
+}

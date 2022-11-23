@@ -9,3 +9,7 @@
     border: none;
     color: white;
 }
+
+.nav-item, .btn-login, .btn-cadastre{ 
+    font-size: 25px
+}
