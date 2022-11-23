@@ -119,11 +119,31 @@
                 <option value="3">Pix</option>
               </select>
               <h5 style="margin-top: 2rem;">Efetue o pagamento para aprovação da compra:</h5>
-              <button class="btn" style="background-color: red; color: white; font-size: 20; font-weight: 700; border: none;">Cancelar</button>
+              <button class="btn" style="background-color: red; color: white; font-size: 20; font-weight: 700; border: none;" data-bs-toggle="modal" data-bs-target="#exampleModal3">Cancelar</button>
               <!-- Button trigger modal -->
 <button type="button" class="btn " style="background-color: green; color: white; font-size: 20; font-weight: 700; border: none;" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Finalizar Compra
 </button>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cancelar Compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ao cancelar, vai ser redirecionado a página inícial, tem certeza que deseja cancelar?
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn " style="background-color: red; color: white; font-size: 20; font-weight: 700; border: none;" data-bs-dismiss="modal">Não</button>
+        <a href="inicio.html"></a>
+        <button type="button" id="alert" class="btn " style="background-color: green; color: white; font-size: 20; font-weight: 700; border: none;" data-bs-dismiss="modal" onclick="window.location.href='inicio.html'">Sim</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
